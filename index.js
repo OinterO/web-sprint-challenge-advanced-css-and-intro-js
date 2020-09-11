@@ -209,8 +209,45 @@ const artists = [
 (2) Bio of the third artist (2nd index) in the array */
 
 
+function functiontofindIndexByKeyValue(arraytosearch, key, id, valuetosearch) {
+ 
+  for (var i = 0; i < arraytosearch.length; i++) {
+   
+  if (arraytosearch[i][key][id] == valuetosearch) {
+  return i;
+  }
+  }
+  return null;
+  }
+  var index = functiontofindIndexByKeyValue(artists, "name", 19, "Amedeo Modigliani");
 
-/* Task 2: There is a typo in your dataset 😱 The 9th artist, Vincent Van Gogh is currently Vincent Van Dough. Use an array method to fix this issue and console.log() to check your work. */
+
+
+
+
+
+
+
+/* Task 2: There is a typo in your dataset 😱 The 9th artist, Vincent Van Gogh is currently Vincent Van Dough.
+ Use an array method to fix this issue and console.log() to check your work. */
+
+
+
+ function mistake(oop, index, name) {
+  return `${oop[index].name}`
+}
+console.log(getReviewByIndex(artists, 8, "Vincent van Gogh"));
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -223,19 +260,58 @@ const artists = [
  * it will return `The artist at index 0 is Amedeo Modigliani`.
 */
 function getArtistByIndex(array, index) {
-    /* code here */
+  return ` The artist at index ${array[index].id} is  ${array[index].name}`
+
   }
   
-  /**
+  console.log(getArtistByIndex(artists, 0));
 
 
-/* Task 4: Create a function called get20s() that takes data as an argument and returns an array with names of artists who were born in and died in 20th century (1900-2000) example born in 1901 and died in 1959 - included / born in 1889 and died in 1925 not included - should return ["Salvador Dali", "Frida Kahlo"]*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Task 4: Create a function called get20s() that takes data as an argument and returns an array with names of artists who were born in and died in 20th century (1900-2000) example born in 1901 and died in 1959 -
+ included / born in 1889 and died in 1925 not included - should return ["Salvador Dali", "Frida Kahlo"]*/
 
 function get20s(/* Code here */){
 
   /* Code here */
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /* Task 5: Create a function called `removeArtist` that takes two arguments:
@@ -255,6 +331,17 @@ function removeArtist(/*code here*/) {
  
 
 /**
+ * 
+ * 
+ * 
+ * 
+ * 
+ * 
+ * 
+ * 
+ * 
+ * 
+ * 
 /* Task 6: Create a function called `addArtist` that can accept an object of information and add it to the artists array. Then, add a 21st artist to the array (you) with custom information!👩‍🎨👨‍🎨
 
 For example, you could add the following information: 
@@ -273,6 +360,18 @@ function addArtist(/* Code here */){
 
   }
 
+
+
+
+
+
+
+
+
+
+
+
+
 /* Task 7: Create a function called lotsOfArt() that takes one argument: 
 
     (1) artists array 
@@ -286,6 +385,66 @@ function lotsOfArt(/* Code here */){
   /* Code here */
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
